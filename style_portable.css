@@ -1,0 +1,92 @@
+body{
+    margin:0px;
+}
+div{
+    height:851px;
+}
+#dv1{
+    background-color:black;
+}
+#dv1 > p{
+    
+    font-family:'Josefin Sans', sans-serif;
+    font-size:25px;
+    color:goldenrod;
+}
+#dv2 > p {
+    font-family:'Josefin Sans', sans-serif;
+    font-size:25px;
+    line-height:40px;
+    color:Black;
+}
+
+#dv2{
+    background-color: goldenrod;
+}
+#dv2 h1{
+    color:black;
+    font-size:30px;
+    font-family:'Righteous', cursive;
+}
+#dimg{
+    background-image: url('resources/images/bosespeaker.jpg');
+    background-size:100%;
+    background-repeat:no-repeat;
+}
+
+@media (min-width:1394px){
+    body #maindiv{
+        display:Flex;
+        flex-direction: row;
+    }
+    #dv1{
+        width:30%;
+    }
+    #dv1 > p{
+        margin-left:20px;
+    position:relative;
+    top:20%;
+    line-height: 40px;
+    }
+    #dv2 p{
+        display:none;
+    }
+    #dv1 + #dv2{
+        position:relative;
+        width:70%;
+    }
+    #dv2 h1 ~ #dimg{
+        position:absolute;
+        top:20%;
+       width:70%;
+      height:60%;
+    }
+    #dv2 h1{
+        margin-left:50px;
+        margin-top:65px;
+    }
+}
+@media (max-width:1394px){
+    #dv2{
+        display:flex;
+        flex-direction:column;
+    }
+    #dv1{
+        display:none;
+    }
+    #dv2 h1{
+        padding:20px 0px 10px 20px;
+        flex-shrink:1;
+    }
+    #dimg{
+        flex-shrink:2;
+    }
+    #dv2 p{
+        
+        flex-shrink:1;
+        display:block;
+    }
+    
+}
+
+
