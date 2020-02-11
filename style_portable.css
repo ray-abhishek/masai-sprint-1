@@ -17,14 +17,14 @@ div{
     font-family:'Josefin Sans', sans-serif;
     font-size:25px;
     line-height:40px;
-    color:Black;
+    color:goldenrod;
 }
 
 #dv2{
-    background-color: goldenrod;
+    background-color:#1c5f4a;
 }
 #dv2 h1{
-    color:black;
+    color:goldenrod;
     font-size:30px;
     font-family:'Righteous', cursive;
 }

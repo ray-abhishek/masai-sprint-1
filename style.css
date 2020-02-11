@@ -74,7 +74,8 @@ body{
 }
 .items{
     float:left;
-    padding:20px;
+    padding-top:20px;
+    padding-left:20px;
     width:70%;
 }
 
@@ -82,29 +83,67 @@ body{
 .items img{
     width:100%;
     height:100%;
+    
 }
 .items div{
     
     position:relative;
-    padding:20px;
+    
 }
 .items div:hover img{
     opacity:0.5;
 }
-.items button{
-    padding-top:5px;
-    font-family: 'Josefin Sans', sans-serif;
-    color:grey;
-    font-size:40px;
+.items .button{
+    
     position:absolute;
-    top:10%;
-    left:6.5%;
+    top:0%;
+    left:0%;
     display:none;
-    border-radius:10px;
-    background-color: transparent;
+    background-color: #1c5f4a;
+    width:50%;
+    height:100%;
+    padding-left:20px;
+    padding-bottom: 0px;;
 }
-.items div:hover button{
+.items .button p{
+    line-height: 30px;;
+    color:white;
+    font-size:20px;
+    font-style:'Josefin Sans', sans-serif;
+}
+.items div:hover .button{
     display:block;
+}
+
+.item1{
+    background-image:url('resources/images/mainspeaker.jpg');
+    background-size:cover;
+    background-repeat:round;
+    width:100%;
+    height:auto;
+}
+.item2{
+    background-image:url('resources/images/Blackspeaker.jpg');
+    background-size:100%;
+    background-repeat:round;
+    width:100%;
+    height:auto;
+}
+.item3{
+    background-image:url('resources/images/bigsonos.jpg');
+    background-size:100%;
+    background-repeat:round;
+    width:100%;
+    height:auto;
+    padding-bottom:0px;
+}
+.item4{
+    background-image:url('resources/images/whitespeaker.jpg');
+    background-size:contain;
+    background-repeat:round;
+    width:100%;
+    height:auto;
+    padding-bottom:0px;
 }
 
 
@@ -122,13 +161,13 @@ body{
     }
     #dropmenu:hover .menu-content{
         display:inline-block;
-
     }
-    .items button{
+    .items .button{
         color:black;
         font-size:20px;
-        top:40%;
-        left:40%;
+        height:100%;
+        top:0%;
+        left:0%;
     }
     .main{
         padding-left:20px;
@@ -185,7 +224,7 @@ body{
         width:95%;
         clear:left;
         display:grid;
-        grid-gap:15px;
+    /*    grid-gap:15px;  */
         grid-template-columns: 50% 50%;
         grid-template-rows:350px 350px;
     }
@@ -207,8 +246,8 @@ body{
 @media (min-width:1354px){
     .items{
         display:grid;
-        grid-gap:15px;
-        grid-template-columns: 50% 50%;
+   /*     grid-gap:15px; */
+         grid-template-columns: 50% 50%;
         grid-template-rows:400px 400px;
     }
     .items .item1{
